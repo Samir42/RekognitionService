@@ -3,7 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32414.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RekognitionService", "RekognitionService\RekognitionService.csproj", "{61B673D7-84A2-42C8-9179-7F1A124833FB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{889D9BEC-572D-4523-857B-07E826CF8412}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RekognitionService.API", "RekognitionService.API\RekognitionService.API.csproj", "{E669D9C8-9C84-4EF2-8C03-8B5DB90CC047}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RekognitionService.Core", "RekognitionService.Core\RekognitionService.Core.csproj", "{B318A2F8-EB76-43BB-A33B-3CD00A354943}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RekognitionService.Infrastructure", "RekognitionService.Infrastructure\RekognitionService.Infrastructure.csproj", "{F41D077D-5BDD-4A5B-98D3-ECC4ECFB2102}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RekognitionService.Domain", "RekognitionService.Domain\RekognitionService.Domain.csproj", "{5D1D61C8-41BE-43BF-B9A2-F5129A977B1F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RekognitionService.Application", "RekognitionService.Application\RekognitionService.Application.csproj", "{A65FFB2C-5511-4C02-A080-B8586A455BCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{547C9D96-AF81-4D04-85B0-64D41E6A96B2}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\LambdaRekognition.py = ..\..\..\Desktop\LambdaRekognition.py
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +26,36 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{61B673D7-84A2-42C8-9179-7F1A124833FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61B673D7-84A2-42C8-9179-7F1A124833FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61B673D7-84A2-42C8-9179-7F1A124833FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61B673D7-84A2-42C8-9179-7F1A124833FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E669D9C8-9C84-4EF2-8C03-8B5DB90CC047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E669D9C8-9C84-4EF2-8C03-8B5DB90CC047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E669D9C8-9C84-4EF2-8C03-8B5DB90CC047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E669D9C8-9C84-4EF2-8C03-8B5DB90CC047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B318A2F8-EB76-43BB-A33B-3CD00A354943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B318A2F8-EB76-43BB-A33B-3CD00A354943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B318A2F8-EB76-43BB-A33B-3CD00A354943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B318A2F8-EB76-43BB-A33B-3CD00A354943}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41D077D-5BDD-4A5B-98D3-ECC4ECFB2102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41D077D-5BDD-4A5B-98D3-ECC4ECFB2102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41D077D-5BDD-4A5B-98D3-ECC4ECFB2102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41D077D-5BDD-4A5B-98D3-ECC4ECFB2102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1D61C8-41BE-43BF-B9A2-F5129A977B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1D61C8-41BE-43BF-B9A2-F5129A977B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1D61C8-41BE-43BF-B9A2-F5129A977B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1D61C8-41BE-43BF-B9A2-F5129A977B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A65FFB2C-5511-4C02-A080-B8586A455BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A65FFB2C-5511-4C02-A080-B8586A455BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A65FFB2C-5511-4C02-A080-B8586A455BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A65FFB2C-5511-4C02-A080-B8586A455BCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E669D9C8-9C84-4EF2-8C03-8B5DB90CC047} = {889D9BEC-572D-4523-857B-07E826CF8412}
+		{B318A2F8-EB76-43BB-A33B-3CD00A354943} = {889D9BEC-572D-4523-857B-07E826CF8412}
+		{F41D077D-5BDD-4A5B-98D3-ECC4ECFB2102} = {889D9BEC-572D-4523-857B-07E826CF8412}
+		{5D1D61C8-41BE-43BF-B9A2-F5129A977B1F} = {889D9BEC-572D-4523-857B-07E826CF8412}
+		{A65FFB2C-5511-4C02-A080-B8586A455BCE} = {889D9BEC-572D-4523-857B-07E826CF8412}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {565D4AFA-7B6E-41F3-89C5-A56CC22A61B2}
